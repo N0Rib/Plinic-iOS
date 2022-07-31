@@ -22,8 +22,7 @@ struct userContentView: View {
                         .font(.system(size: 20))
                         .foregroundColor(Color.white)
                         .tracking(-0.41)
-                        .padding(.trailing, 175.0)
-                        .padding(.leading, 10.0)
+                        .frame(width: 270, height: 42, alignment: .leading)
                     //유저 이름
                     Image(systemName: "plus.circle")
                         .font(.system(size: 35))
@@ -33,9 +32,10 @@ struct userContentView: View {
                         .padding(.trailing, 10.0)
                         .font(.system(size: 35))
                         .foregroundColor(Color(#colorLiteral(red: 0.5, green: 0.93, blue: 0.6, alpha: 1)))
+                   
 
                 }
-                .frame(width: 390, height: 42, alignment: .center)
+                .padding(.leading, 10.0)
                 //HStack
                 userInfo()
                     .padding(.top, 10.0)
